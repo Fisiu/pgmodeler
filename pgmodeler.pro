@@ -116,7 +116,6 @@ macx {
  RESDESTDIR = $$DESTDIR
 }
 
-
 # User can pass additional config params to specify custom output directory as follow:
 #
 # BINDIR = where any generated binary will be installed.
@@ -130,8 +129,6 @@ macx {
 linux|windows {
  DESTDIR = $$PWD/build
  
- #On Linux and Windows the compiled binaries resides on the same executable's dir (by default)
- BINDESTDIR=$$DESTDIR
  defined(BINDIR, var): BINDESTDIR=$$BINDIR
 
  #On Linux and Windows the compiled libs resides on the same executable's dir (by default)
